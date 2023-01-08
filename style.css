@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 120% 120% ;
+}
+
+.layer{
+    background-color: black;
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+}
+
+.NBar{
+    height: 8.760rem;
+    background-color: #f6f7f6;
+    color: #48c6e9;
+    opacity: 0.77;
+}
+
+.logo-img{
+
+    position: relative;
+    float: left;
+    width: 20vw;
+    height: 36vh;
+}
+
+.NBar>a{
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.450em;
+    text-decoration: none;
+    text-align: center;
+    color: #48c6e9;
+    position: relative;
+    top: 2.8em;
+    left: 2.5em;
+    padding: 0em 2em;
+}
