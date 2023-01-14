@@ -28,7 +28,7 @@ body {
   height: 17.8vh;
   margin-top: 10vh;
   background-color: #f6f7f6;
-  color: #48c6e9;
+  color: black;
   opacity: 0.77;
 }
 
@@ -48,13 +48,17 @@ body {
   font-size: 1.45em;
   text-decoration: none;
   text-align: center;
-  color: #48c6e9;
+  color: black;
   position: relative;
   top: 2.5em;
   left: 2.5em;
   padding: 0em 2em;
+  transition: 0.28s;
 }
 
+.NBar > a:hover {
+  color: rgb(72, 198, 233);
+}
 /* Media Query */
 
 @media (max-width: 768px) {
@@ -92,4 +96,151 @@ body {
     padding-top: 1em;
   }
   
+}
+
+
+.RegForm{
+  padding: 0em 2em;
+  width: 100%;
+  height: auto;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.RegForm h2{
+  text-align: center;
+  font-size:30px;
+  font-weight:300;
+  color:#222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.RegForm h2::before ,.RegForm h2::after{
+  content: " ";
+  display: block;
+  border-bottom: 2px solid rgb(72, 198, 233);
+  border-top: 2px solid rgb(72, 198, 233);
+  height: 5px;
+}
+
+.container{
+  transition: 0.28s;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-top: 5px outset rgb(72, 198, 233);
+  border-bottom: 5px outset rgb(72, 198, 233);
+  border-radius: 40px 0px 40px 0px;  
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  margin-bottom: 2em;
+}
+
+.container:hover{
+  transform: scaleX(1.02);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: large;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  /* background-color: rgba(145, 44, 34, 0.55); */
+
+}
+
+form{
+  display: block;
+  margin-top: 5em;
+  text-align: center;
+  margin: 1em 2em;
+}
+
+form label{
+  font-size: 2em;
+  color: black;
+}
+
+form input[type='text'], input[type='password']{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  border-radius: 30px;
+  width:43%;
+  height: 2em;
+}
+
+.radioContainer{
+  display: block;
+  margin: auto auto;
+  height: auto;
+  width: 60%;
+  padding: 20px;
+}
+
+label[for="gender"]{
+	color: black;
+}
+
+.radioContainer ul{
+  list-style: none;
+}
+
+ul li{
+  margin: auto auto;
+  width: 40%;
+  height: auto;
+  border-radius: 1em;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+ul li label{
+  display: block;
+  /* position: relative; */
+  font-weight: 300;
+  font-size: 1.35em;
+  padding: 0.5em 0em;
+  margin: auto auto;
+  height: 2em;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+ul li:hover label{
+	color: #FFFFFF;
+  font-weight: 650;
+}
+
+input[type=radio]:checked ~ label{
+  color: rgb(72, 198, 233);
+}
+
+form button{
+  font-family: 'Times New Roman', Times, serif;
+  width:10em;
+  height: 1.8em;
+  border-radius: 30px;
+  background-color: rgb(72, 198, 233);
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  margin-top: 1em;
+  transition: 0.28s;
+}
+
+form button::first-letter{
+  font-size: 1.45em;
+}
+
+form button:hover{
+  text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, rgb(72, 198, 233) 0px 0px 20px, rgb(72, 198, 233) 0px 0px 30px, rgb(72, 198, 233) 0px 0px 40px, rgb(72, 198, 233) 0px 0px 50px, rgb(72, 198, 233) 0px 0px 75px;
+  background-color: white;
+  color: rgb(72, 198, 233);
 }

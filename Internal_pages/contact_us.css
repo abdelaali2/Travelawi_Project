@@ -28,7 +28,7 @@
     height: 17.8vh;
     margin-top: 10vh;
     background-color: #f6f7f6;
-    color: #48c6e9;
+    color: black;
     opacity: 0.77;
   }
   
@@ -48,7 +48,7 @@
     font-size: 1.45em;
     text-decoration: none;
     text-align: center;
-    color: #48c6e9;
+    color: black;
     position: relative;
     top: 2.5em;
     left: 2.5em;
