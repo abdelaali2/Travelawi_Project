@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Travelawi-contact_us-Webpage" author="Ibrahim Badr & Rania Gomaa">
-    <title>Travelawi - Contact us</title>
-    <link rel="stylesheet" href="./contact_us.css">
-</head>
-<body>
-    
-    <header>
-        <nav class="NBar">
-            <img class="logo-img" src="../Resources/Logo-modified.png" ALT="Travelawi Logo" ALIGN=CENTER>
-            <a href="../index.html">Home</a>
-            <a href="contact_us.html">Contact us</a>
-            <a href="./users.html">Users</a>
-            <a href="./login.html">Login</a>
-            <a href="./register.html">Register</a>
-        </nav>
-        <br><br><br>
-    </header>
-
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="Travelawi-contact_us-Webpage" author="Ibrahim Badr &
+            Rania Gomaa">
+        <title>Travelawi - Contact us</title>
+        <link rel="stylesheet" href="./contact_us.css">
+    </head>
+    <body>
+        <div id="overlayBody">
+            <header>
+                <nav class="NBar">
+                    <a href="../index.html">
+                        <img class="logo-img"
+                            src="../Resources/Logo-modified.png" ALT="Travelawi
+                            Logo" ALIGN=CENTER>
+                    </a>
+                    <br><br><br><a href="../index.html" class="NormalLink">Home</a>
+                    <a href="contact_us.html" class="NormalLink">Contact us</a>
+                    <a href="./users.html" class="NormalLink">Users</a>
+                    <a href="./login.html" class="NormalLink">Login</a>
+                    <a href="./register.html" class="NormalLink">Register</a>
+                </nav>
+                <br><br><br>
+            </header>
+            <section class="ContactForm">
+                <h2>CONTACT US</h2>
+                <div class="container">
+                    <form>
+                        <input class="main-input" type="text" name="name" placeholder="Name"><br>
+                        <input class="main-input" type="email" name="email"placeholder="Email"><br>
+                        <textarea class="main-input" name="message" placeholder="Type your Message"></textarea><br>
+                        <button type="submit">Submit</button><br>
+                    </div>
+                </section>
+            </div>
+        </body>
+    </html>

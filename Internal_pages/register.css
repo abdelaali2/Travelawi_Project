@@ -180,8 +180,7 @@ form label {
   color: black;
 }
 
-form input[type="text"],
-input[type="password"] {
+form input[type="text"],form input[type="email"],input[type="password"] {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 1em;
