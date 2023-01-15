@@ -234,7 +234,6 @@ div#slider figure img {
 .destinations > div:hover {
   width: 90%;
   height: 28em;
-  background-color: rgba(red, green, blue, 0.7);
 }
 
 .destinations > div > a {
@@ -256,7 +255,6 @@ div#slider figure img {
 
 #Egy:hover {
   background-image: url(./Resources/Pyramids-logo.png);
-  /* background-position: bottom; */
   background-size: fill;
 }
 

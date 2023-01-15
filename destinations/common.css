@@ -109,7 +109,6 @@ footer{
   margin-right: 5em;
   margin-left: 2em;
 }
-/* Media Query */
 
 /* Media Query */
 
@@ -170,7 +169,7 @@ footer{
   overflow: hidden;
 }
 
-h2 {
+.article h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 300;
@@ -185,8 +184,7 @@ h2 {
   align-items: center;
 }
 
-h2::before,
-h2::after {
+.article h2::before,.article h2::after {
   content: " ";
   display: block;
   border-bottom: 2px solid rgb(72, 198, 233);
@@ -211,7 +209,7 @@ img:hover {
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
-.articlr p{
+.article p{
   margin-top: 1em;
   font-size: 1.6em;
   font-family: 'Times New Roman', Times, serif;
@@ -219,3 +217,51 @@ img:hover {
   text-align: center;
   text-shadow: -1px 1px 2px white, 1px 1px 2px white, 1px -1px 0 white,-1px -1px 0 white;
 }
+
+
+.framecontainer{
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.framecontainer div{
+  line-height: 800%;
+  width: 33%;
+  height: 25em;
+  text-align: center;
+  color: white;
+  margin: auto auto;
+  transition: 0.7s;
+  display: inline-block;
+  border-radius: 40px 0px 40px 0px;
+}
+
+.framecontainer a h2{
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 1);
+}
+
+.bl1 {
+  margin-left: 2rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+.bl2 {
+  margin-left: 2rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+
+.bl3 {
+  margin-left: 2rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
