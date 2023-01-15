@@ -1,96 +1,248 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  body {
-    background: linear-gradient(
-      to right,
-      #ada996,
-      #dbdbdb,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-image: url(../Resources/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#overlayBody {
+  background-color: rgba(255, 255, 255, 0.33);
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-size: 200% 200%;
+  height: 100vh;
+}
+.NBar {
+  position: static;
+  height: 8em;
+  background-color: #f6f7f6;
+  color: black;
+  opacity: 0.77;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.logo-img {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  float: left;
+  width: 13em;
+  height: 13em;
+  overflow: visible;
+}
+
+.NBar > a.NormalLink {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 1.45em;
+  margin-top: 2em;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  z-index: 1;
+  padding: 0em 1vw;
+  transition: 0.28s;
+}
+
+.NBar > a.NormalLink:hover {
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    rgb(72, 198, 233) 0px 0px 20px, rgb(72, 198, 233) 0px 0px 30px,
+    rgb(72, 198, 233) 0px 0px 40px, rgb(72, 198, 233) 0px 0px 50px,
+    rgb(72, 198, 233) 0px 0px 75px;
+  margin-right: 5em;
+  margin-left: 2em;
+}
+/* Media Query */
+
+@media (max-width: 768px) {
   .NBar {
-    height: 17.8vh;
-    margin-top: 10vh;
+    position: static;
+    margin-top: 0;
     background-color: #f6f7f6;
     color: black;
     opacity: 0.77;
+    width: 100%;
+    height: 15em;
   }
-  
+
   .logo-img {
     position: relative;
-    margin-top: -4.25em;
-    margin-left: -1.29em;
+    margin-top: -2em;
+    margin-left: -1em;
+    margin-right: 0em;
     float: left;
-    width: 20vw;
-    height: 36vh;
+    width: 17em;
+    height: 22em;
   }
-  
+
   .NBar > a {
-    float: left;
+    float: none;
+    display: block;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 600;
-    font-size: 1.45em;
+    font-size: 1em;
     text-decoration: none;
     text-align: center;
     color: black;
     position: relative;
-    top: 2.5em;
-    left: 2.5em;
-    padding: 0em 2em;
+    top: 2em;
+    left: -1em;
+    padding-top: 1em;
+    transition: 0.28s;
   }
-  
-  /* Media Query */
-  
-  @media (max-width: 768px) {
-    .NBar {
-      position: static;
-      margin-top: 0;
-      background-color: #f6f7f6;
-      color: #48c6e9;
-      opacity: 0.77;
-      width: 100%;
-      height: 15em;
-    }
-  
-    .logo-img {
-      position: relative;
-      margin-top: -2em;
-      margin-left: -1em;
-      float: left;
-      width: 17em;
-      height: 22em;
-    }
-  
-    .NBar > a {
-      float: none;
-      display: block;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-weight: 600;
-      font-size: 1em;
-      text-decoration: none;
-      text-align: center;
-      color: #48c6e9;
-      position: relative;
-      top: 2em;
-      left: -1em;
-      padding-top: 1em;
-    }
-    
+  .sliderArea {
+    display: inline-block;
+    margin-top: 5em;
+    margin-left: 20em;
   }
-  
+
+  div#slider > #overlay {
+    display: none;
+  }
+}
+
+.LoginForm {
+  padding: 0em 2em;
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+  text-align: center;
+}
+
+.LoginForm h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  text-shadow: -1px 1px 2px white, 1px 1px 2px white, 1px -1px 0 white,-1px -1px 0 white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.LoginForm h2::before,
+.LoginForm h2::after {
+  content: " ";
+  display: block;
+  border-bottom: 2px solid rgb(72, 198, 233);
+  border-top: 2px solid rgb(72, 198, 233);
+  height: 5px;
+}
+
+.container {
+  transition: 0.28s;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 5px outset rgb(72, 198, 233);
+  border-bottom: 5px outset rgb(72, 198, 233);
+  border-radius: 40px 0px 40px 0px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.container:hover {
+  transform: scaleX(1.02);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: large;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+form {
+  display: block;
+  margin-top: 5em;
+  text-align: center;
+  margin: 1em 2em;
+}
+
+form label {
+  font-size: 2em;
+  color: black;
+}
+
+form input[type="text"],
+input[type="password"],
+input[type="submit"]  {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  border-radius: 30px;
+  width: 43%;
+  height: 2em;
+}
+
+
+form button {
+  font-family: "Times New Roman", Times, serif;
+  width: 10em;
+  height: 1.8em;
+  border-radius: 30px;
+  background-color: rgb(72, 198, 233);
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+  margin-top: 1em;
+  transition: 0.28s;
+}
+
+form button::first-letter {
+  font-size: 1.45em;
+}
+
+form button:hover {
+  text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
+    rgb(72, 198, 233) 0px 0px 20px, rgb(72, 198, 233) 0px 0px 30px,
+    rgb(72, 198, 233) 0px 0px 40px, rgb(72, 198, 233) 0px 0px 50px,
+    rgb(72, 198, 233) 0px 0px 75px;
+  background-color: white;
+  color: rgb(72, 198, 233);
+}
+
+
+.signup_link{
+  display: block;
+  margin-top: 5em;
+  text-align: center;
+  margin: 1em 2em;
+  font-size: 2em;
+  color: black;
+}
+
+.signup_link > a:link{
+  color: #222;
+  text-shadow: -1px 1px 2px white, 1px 1px 2px white, 1px -1px 0 white,
+  -1px -1px 0 white;}
+.signup_link > a:visited{
+  color: red;
+}
+.signup_link > a:hover{
+  color: rgb(72, 198, 233);
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+  -1px -1px 0 #000;
+  font-weight: 650;
+}
+.signup_link > a:active {
+  color: white;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
+  -1px -1px 0 #000;
+  font-weight: 650;
