@@ -58,6 +58,7 @@ body {
 .NBar > a:hover {
   color: rgb(72, 198, 233);
 }
+
 /* Media Query */
 
 @media (max-width: 768px) {
@@ -65,22 +66,24 @@ body {
     position: static;
     margin-top: 0;
     background-color: #f6f7f6;
-    color: #48c6e9;
+    color: black;
     opacity: 0.77;
     width: 100%;
-    height: 15em;
+    height: 100%;
   }
 
   .logo-img {
-    position: relative;
-    margin-top: -2em;
+    position: absolute;
+    z-index: 0;
+    display: block;
+    /* margin-top: -2em; */
     margin-left: -1em;
     float: left;
     width: 17em;
     height: 22em;
   }
 
-  .NBar > a {
+  .NBar > a.NormalLink {
     float: none;
     display: block;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -88,10 +91,9 @@ body {
     font-size: 1em;
     text-decoration: none;
     text-align: center;
-    color: #48c6e9;
+    color: black;
     position: relative;
-    top: 2em;
-    left: -1em;
-    padding-top: 1em;
+    transition: 0.28s;
+    top: -3em;
   }
 }
