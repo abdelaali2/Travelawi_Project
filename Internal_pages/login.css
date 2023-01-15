@@ -41,6 +41,7 @@ body {
   z-index: 0;
   display: block;
   float: left;
+  left: -0.150rem;
   width: 13em;
   height: 13em;
   overflow: visible;
@@ -106,12 +107,19 @@ body {
     top: -3em;
   }
 }
+.LoginForm{
+  padding: 0em 2em;
+  width: 100%;
+  height: auto;
+  margin-top: 3em;
+  text-align: center;
+}
 
 .LoginForm h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 3em;
   font-weight: 300;
-  color: #222;
+  color: transparent;
   text-shadow: -1px 1px 2px white, 1px 1px 2px white, 1px -1px 0 white,-1px -1px 0 white;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -213,7 +221,8 @@ form button:hover {
 .signup_link > a:link{
   color: #222;
   text-shadow: -1px 1px 2px white, 1px 1px 2px white, 1px -1px 0 white,
-  -1px -1px 0 white;}
+  -1px -1px 0 white;
+}
 .signup_link > a:visited{
   color: red;
 }

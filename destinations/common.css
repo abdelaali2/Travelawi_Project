@@ -37,6 +37,7 @@ body {
   z-index: 0;
   display: block;
   float: left;
+  left: -0.150rem;
   width: 13em;
   height: 13em;
   overflow: visible;

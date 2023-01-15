@@ -24,7 +24,7 @@ body {
   background-repeat: repeat-y;
   background-attachment: scroll;
   background-size: 200% 200%;
-  height: 100%;
+  height: auto;
 }
 .NBar {
   position: static;
@@ -41,6 +41,7 @@ body {
   z-index: 0;
   display: block;
   float: left;
+  left: -0.150rem;
   width: 13em;
   height: 13em;
   overflow: visible;
@@ -116,9 +117,9 @@ body {
 
 .RegForm h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 3em;
   font-weight: 300;
-  color: #222;
+  color: transparent;
   text-shadow: -1px 1px 2px white, 1px 1px 2px white, 1px -1px 0 white,-1px -1px 0 white;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -191,13 +192,9 @@ label[for="gender"] {
   color: black;
 }
 
-.radioContainer ul {
-  list-style: none;
-}
-
 ul li {
   margin: auto auto;
-  width: 40%;
+  width: 9em;
   height: auto;
   border-radius: 1em;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -206,6 +203,12 @@ ul li {
 ul li input[type="radio"] {
   position: absolute;
   visibility: hidden;
+}
+input[type="radio"]:checked ~ label {
+  color: white;
+  font-size: 2em;
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,-1px -1px 0 #000;
+  text-align: center;
 }
 
 ul li label {
@@ -216,6 +219,7 @@ ul li label {
   padding: 0.5em 0em;
   margin: auto auto;
   height: 2em;
+  width: 85%;
   cursor: pointer;
   transition: all 0.25s linear;
 }
@@ -227,12 +231,6 @@ ul li:hover label {
   font-weight: 650;
 }
 
-input[type="radio"]:checked ~ label {
-  color: white;
-  font-size: 40px;
-  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
-}
 
 form button {
   font-family: "Times New Roman", Times, serif;
